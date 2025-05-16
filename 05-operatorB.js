@@ -28,10 +28,16 @@ console.log("=================Word Length Even Or Odd=========================="
 function checkWordLength(word) {
   var length = word.length;
   var result = length % 2 === 0 ? "Even" : "Odd";
-  console.log(`Given Word is "${word}" , Length is ${length} and it's: ${result}`);
+  console.log(`Total length  is "${word}" , Length is ${length} and it's: ${result}`);
 }
 
 checkWordLength("JavaScript");
 checkWordLength("developer");
 checkWordLength("Google");
+
+
+console.log(4+true);
+console.log(5-true);
+
+
 
