@@ -1,0 +1,27 @@
+
+class Vehicle {
+  constructor(type, brand, model, year, color) {
+    this.type = type;
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+  }
+
+  logDetails() {
+    console.log(`Vehicle Info: A ${this.color} ${this.year} ${this.brand} ${this.model} (${this.type}).`);
+  }
+}
+
+
+const vehicles = [
+  new Vehicle("Car", "Toyota", "Camry", 2020, "Blue"),
+  new Vehicle("Bike", "Yamaha", "FZ", 2019, "Black"),
+  new Vehicle("Truck", "Ford", "F-150", 2021, "White"),
+  new Vehicle("SUV", "Honda", "CR-V", 2022, "Silver"),
+  new Vehicle("Van", "Mercedes", "Vito", 2023, "Grey")
+];
+
+for (let i = 0; i < vehicles.length; i++) {
+  vehicles[i].logDetails();
+}
