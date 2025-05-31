@@ -1,0 +1,49 @@
+const arrayNumbers = [1, -7, 40, 502, -77, 91, 0, 108, 89, -601];
+
+//  Log the array element with its index
+arrayNumbers.forEach((value, index) => {
+  console.log(`Index: ${index}, Value: ${value}`);
+});
+console.log("---------------------------------------------------------------------------------------------------------------------------------");
+
+//  Find the positive numbers and log on console
+arrayNumbers.forEach(value => {
+  if (value > 0) {
+    console.log(`Positive: ${value}`);
+  }
+});
+console.log("----------------------------------------------------------------------------------------------------------------------------------");
+
+//  Find the negative numbers, add into new array and log new array
+const negativeNumbers = [];
+arrayNumbers.forEach(value => {
+  if (value < 0) {
+    negativeNumbers.push(value);
+  }
+});
+console.log('Negative Numbers:', negativeNumbers);
+console.log("-----------------------------------------------------------------------------------------------------------------------------------");
+
+// Find the even numbers and log on console
+arrayNumbers.forEach(value => {
+  if (value % 2 === 0) {
+    console.log(`Even: ${value}`);
+  }
+});
+console.log("-------------------------------------------------------------------------------------------------------------------------------------");
+
+//  Find the sum of all elements
+let sum = 0;
+arrayNumbers.forEach(value => {
+  sum += value;
+});
+console.log('Sum of all elements:', sum);
+console.log("------------------------------------------------------------------------------------------------------------------------------------");
+
+//  Log the only even indexed array values
+arrayNumbers.forEach((value, index) => {
+  if (index % 2 === 0) {
+    console.log(`Even Index [${index}]: ${value}`);
+  }
+});
+console.log("------------------------------------------------------------------------------------------------------------------------------------");
